@@ -1,0 +1,17 @@
+---
+title: "About"
+---
+
+## Hi, I'm Yue Lynn Chan
+
+I'm a data analyst based in Melbourne, currently rebuilding and levelling up my skills in data analytics and visualisation.
+
+My tools of choice are **R** for analysis and **Tableau** for visualisation — and I'm always picking up something new.
+
+Down the Rabbit Hole is where I document the process — messy data, interesting questions, and whatever I find when I dig in.
+
+## Links
+
+- [GitHub](https://github.com/YueLynn-Chan)
+- [LinkedIn](https://www.linkedin.com/in/yuelynnchan/)
+- [Tableau Public](https://public.tableau.com/app/profile/yue.lynn.chan6239/vizzes)

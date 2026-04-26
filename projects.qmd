@@ -1,0 +1,7 @@
+---
+title: "Projects"
+---
+
+Welcome to the rabbit hole. Each project is a deep dive into something I found interesting — different data, different tools, same curiosity.
+
+*More projects coming soon.*

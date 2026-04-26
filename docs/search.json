@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Welcome to the rabbit hole. Each project is a deep dive into something I found interesting — different data, different tools, same curiosity.\nMore projects coming soon."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a data analyst based in Melbourne, currently rebuilding and levelling up my skills in data analytics and visualisation.\nMy tools of choice are R for analysis and Tableau for visualisation — and I’m always picking up something new.\nDown the Rabbit Hole is where I document the process — messy data, interesting questions, and whatever I find when I dig in."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Down the Rabbit Hole",
+    "section": "",
+    "text": "Hi, I’m Yue Lynn — a data analyst with a habit of diving too deep into things I find interesting.\nThis is my portfolio. Every few weeks I pick a topic, find the data, and see what it actually says. The topics are random. The analysis isn’t.\nTake a look around."
+  },
+  {
+    "objectID": "about.html#hi-im-yuelynn-chan",
+    "href": "about.html#hi-im-yuelynn-chan",
+    "title": "About",
+    "section": "",
+    "text": "I’m a data analyst based in Melbourne, currently rebuilding and levelling up my skills in data analytics and visualisation.\nMy tools of choice are R for analysis and Tableau for visualisation — and I’m always picking up something new.\nDown the Rabbit Hole is where I document the process — messy data, interesting questions, and whatever I find when I dig in."
+  },
+  {
+    "objectID": "about.html#links",
+    "href": "about.html#links",
+    "title": "About",
+    "section": "Links",
+    "text": "Links\n\nGitHub\nLinkedIn\nTableau Public"
+  },
+  {
+    "objectID": "about.html#hi-im-yue-lynn-chan",
+    "href": "about.html#hi-im-yue-lynn-chan",
+    "title": "About",
+    "section": "",
+    "text": "I’m a data analyst based in Melbourne, currently rebuilding and levelling up my skills in data analytics and visualisation.\nMy tools of choice are R for analysis and Tableau for visualisation — and I’m always picking up something new.\nDown the Rabbit Hole is where I document the process — messy data, interesting questions, and whatever I find when I dig in."
+  }
+]

@@ -2,8 +2,12 @@
 title: "Down the Rabbit Hole"
 ---
 
-Hi, I'm Yue Lynn — a data analyst with a habit of diving too deep into things I find interesting.
+Hi, I'm YueLynn — a data analyst with a habit of diving too deep into things I find interesting.
 
 This is my portfolio. Every few weeks I pick a topic, find the data, and see what it actually says. The topics are random. The analysis isn't.
 
 Take a look around.
+
+```{=html}
+<iframe src="portfolio-tracker.html" width="100%" height="600px" frameborder="0" style="border:none;"></iframe>
+```

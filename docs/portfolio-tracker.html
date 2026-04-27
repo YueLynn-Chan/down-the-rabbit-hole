@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio Progress Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0e0e0f;
+    --surface: #161618;
+    --surface2: #1e1e21;
+    --border: rgba(255,255,255,0.07);
+    --border2: rgba(255,255,255,0.12);
+    --text: #f0eeea;
+    --muted: #888884;
+    --faint: #444440;
+    --purple: #9b8ff5;
+    --purple-dim: rgba(155,143,245,0.12);
+    --teal: #4ecba0;
+    --teal-dim: rgba(78,203,160,0.1);
+    --amber: #e8a84c;
+    --amber-dim: rgba(232,168,76,0.1);
+    --coral: #e07060;
+    --coral-dim: rgba(224,112,96,0.1);
+    --green: #6bc96b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+  }
+
+  .widget {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .header-left {}
+
+  .eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--purple);
+    margin-bottom: 6px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+    font-weight: 300;
+  }
+
+  .live-dot {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+  }
+
+  .live-dot::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    animation: pulse 2s ease infinite;
+    flex-shrink: 0;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  /* Stats row */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .stat {
+    background: var(--surface);
+    border: 0.5px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+
+  .stat-val {
+    font-family: 'DM Mono', monospace;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  /* Projects */
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin-bottom: 10px;
+  }
+
+  .projects { display: flex; flex-direction: column; gap: 10px; }
+
+  .project-card {
+    background: var(--surface);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    transition: border-color 0.2s;
+    animation: fadeIn 0.4s ease both;
+  }
+
+  .project-card:hover { border-color: var(--border2); }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .project-card.active {
+    border-color: rgba(155,143,245,0.3);
+    background: linear-gradient(135deg, var(--surface) 0%, rgba(155,143,245,0.04) 100%);
+  }
+
+  .project-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .project-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .project-dataset {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 300;
+    margin-top: 2px;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .status-pill {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    letter-spacing: 0.05em;
+  }
+
+  .pill-active { background: var(--purple-dim); color: var(--purple); border: 0.5px solid rgba(155,143,245,0.25); }
+  .pill-backlog { background: var(--surface2); color: var(--muted); border: 0.5px solid var(--border); }
+  .pill-review { background: var(--amber-dim); color: var(--amber); border: 0.5px solid rgba(232,168,76,0.25); }
+  .pill-done { background: var(--teal-dim); color: var(--teal); border: 0.5px solid rgba(78,203,160,0.25); }
+
+  /* Phase pipeline */
+  .phases {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
+  .phase-step {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 0.5px solid var(--border);
+    color: var(--faint);
+    background: transparent;
+    position: relative;
+  }
+
+  .phase-step.complete {
+    color: var(--teal);
+    border-color: rgba(78,203,160,0.2);
+    background: var(--teal-dim);
+  }
+
+  .phase-step.current {
+    color: var(--purple);
+    border-color: rgba(155,143,245,0.3);
+    background: var(--purple-dim);
+  }
+
+  .phase-num {
+    font-size: 9px;
+    opacity: 0.6;
+  }
+
+  /* Progress bar */
+  .progress-wrap { margin-bottom: 10px; }
+
+  .progress-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    color: var(--muted);
+    margin-bottom: 5px;
+  }
+
+  .bar {
+    height: 2px;
+    background: var(--surface2);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    background: var(--purple);
+    transition: width 1s ease;
+  }
+
+  .bar-fill.done { background: var(--teal); }
+
+  /* Tools */
+  .tools { display: flex; gap: 5px; flex-wrap: wrap; }
+
+  .tool-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 0.5px solid var(--border);
+    color: var(--muted);
+    background: var(--surface2);
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 0.5px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--faint);
+    letter-spacing: 0.05em;
+  }
+
+  .footer-name {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--purple);
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
+
+<div class="widget">
+
+  <div class="header">
+    <div class="header-left">
+      <div class="eyebrow">Portfolio tracker</div>
+      <div class="title">Data viz projects</div>
+      <div class="subtitle">Analytics &amp; visualization — built in R + Tableau</div>
+      <div class="live-dot">live progress</div>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="section-label" style="margin-bottom:10px">Projects</div>
+  <div class="projects" id="projects"></div>
+
+  <div class="footer">
+    <div class="footer-note">updated as I go — check back for new projects</div>
+    <div class="footer-name">// data viz portfolio</div>
+  </div>
+
+</div>
+
+<script>
+const PHASE_LABELS = ['Find dataset','ETL & analysis','Visualize','Write-up'];
+const STATUS = {
+  0: {label:'backlog', cls:'pill-backlog'},
+  1: {label:'in progress', cls:'pill-active'},
+  2: {label:'review', cls:'pill-review'},
+  3: {label:'published', cls:'pill-done'}
+};
+
+const projects = [
+  {
+    id: 1,
+    name: 'Retail energy — customer & metering analysis',
+    dataset: 'retail-energy-customer-metering.csv',
+    desc: 'Exploring customer and metering patterns in retail energy using domain expertise.',
+    tools: ['R', 'Tableau', 'Quarto'],
+    phase: 0,
+    status: 1,
+    phasePct: 83
+  }
+];
+
+function renderStats() {
+  const total = projects.length;
+  const inprog = projects.filter(p => p.status === 1 || p.status === 2).length;
+  const pub = projects.filter(p => p.status === 3).length;
+  document.getElementById('stats').innerHTML = `
+    <div class="stat">
+      <div class="stat-val">${total}</div>
+      <div class="stat-label">total projects</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">${inprog}</div>
+      <div class="stat-label">in progress</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">${pub}</div>
+      <div class="stat-label">published</div>
+    </div>`;
+}
+
+function renderProjects() {
+  const container = document.getElementById('projects');
+  container.innerHTML = '';
+  projects.forEach((p, pi) => {
+    const s = STATUS[p.status];
+    const overallPct = Math.round(((p.phase / 4) * 100) + (p.phasePct / 4));
+    const card = document.createElement('div');
+    card.className = 'project-card' + (p.status === 1 ? ' active' : '');
+    card.style.animationDelay = (pi * 0.08) + 's';
+
+    const phases = PHASE_LABELS.map((label, i) => {
+      let cls = '';
+      if (i < p.phase) cls = 'complete';
+      else if (i === p.phase) cls = 'current';
+      return `<div class="phase-step ${cls}"><span class="phase-num">${i+1}</span>${label}</div>`;
+    }).join('');
+
+    card.innerHTML = `
+      <div class="project-top">
+        <div>
+          <div class="project-name">${p.name}</div>
+          <div class="project-dataset">${p.dataset}</div>
+        </div>
+        <span class="status-pill ${s.cls}">${s.label}</span>
+      </div>
+      <div class="phases">${phases}</div>
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span>overall progress</span>
+          <span>${overallPct}%</span>
+        </div>
+        <div class="bar">
+          <div class="bar-fill ${p.status===3?'done':''}" style="width:${overallPct}%"></div>
+        </div>
+      </div>
+      <div class="tools">${p.tools.map(t=>`<span class="tool-tag">${t}</span>`).join('')}</div>`;
+    container.appendChild(card);
+  });
+}
+
+renderStats();
+renderProjects();
+</script>
+</body>
+</html>

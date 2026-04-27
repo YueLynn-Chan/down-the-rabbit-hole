@@ -40,5 +40,82 @@
     "title": "About",
     "section": "",
     "text": "I’m a data analyst based in Melbourne, currently rebuilding and levelling up my skills in data analytics and visualisation.\nMy tools of choice are R for analysis and Tableau for visualisation — and I’m always picking up something new.\nDown the Rabbit Hole is where I document the process — messy data, interesting questions, and whatever I find when I dig in."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/references.html",
+    "href": "projects/260428_retail_energy/references.html",
+    "title": "References & Resources",
+    "section": "",
+    "text": "AER Retail Performance Reporting Hub https://www.aer.gov.au/industry/retail/performance-reporting Main landing page for all quarterly Schedule 2/3/4 data files.\nAER Retail Performance Data — Q4 2023–24 https://www.aer.gov.au/publications/reports/performance/retail-energy-market-performance-update-quarter-4-2023-24 5 quarters + 5 years annual data in Excel. Customer numbers, switching, complaints, hardship, disconnections by retailer and state.\nAER Annual Retail Markets Report 2023–24 https://www.aer.gov.au/publications/reports/performance/annual-retail-markets-report-2023-24 Narrative companion to the data. Pricing, affordability, market concentration, switching trends.\nAEMO Aggregated Price & Demand Data https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/aggregated-data Wholesale price (RRP) and demand by state, 30-min intervals, back to 1998. CSV download per state per month.\nAEMO Operational Demand Data https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/operational-demand-data Half-hourly and daily demand by NEM region."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/references.html#primary-data-sources",
+    "href": "projects/260428_retail_energy/references.html#primary-data-sources",
+    "title": "References & Resources",
+    "section": "",
+    "text": "AER Retail Performance Reporting Hub https://www.aer.gov.au/industry/retail/performance-reporting Main landing page for all quarterly Schedule 2/3/4 data files.\nAER Retail Performance Data — Q4 2023–24 https://www.aer.gov.au/publications/reports/performance/retail-energy-market-performance-update-quarter-4-2023-24 5 quarters + 5 years annual data in Excel. Customer numbers, switching, complaints, hardship, disconnections by retailer and state.\nAER Annual Retail Markets Report 2023–24 https://www.aer.gov.au/publications/reports/performance/annual-retail-markets-report-2023-24 Narrative companion to the data. Pricing, affordability, market concentration, switching trends.\nAEMO Aggregated Price & Demand Data https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/aggregated-data Wholesale price (RRP) and demand by state, 30-min intervals, back to 1998. CSV download per state per month.\nAEMO Operational Demand Data https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/operational-demand-data Half-hourly and daily demand by NEM region."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/references.html#dmo-vdo-reference-prices",
+    "href": "projects/260428_retail_energy/references.html#dmo-vdo-reference-prices",
+    "title": "References & Resources",
+    "section": "DMO / VDO Reference Prices",
+    "text": "DMO / VDO Reference Prices\nAER DMO 7 Final Determination (2025–26) https://www.aer.gov.au/industry/registers/resources/reviews/default-market-offer-prices-2025-26 Most current DMO. Includes network cost breakdowns and retail margin methodology.\nESC Victorian Default Offer (VDO) Historical Decisions https://www.esc.vic.gov.au/electricity-and-gas/tariffs-and-benchmarks/victorian-default-offer VDO determinations — Victoria’s equivalent of the DMO, set by the ESC."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/references.html#context-background",
+    "href": "projects/260428_retail_energy/references.html#context-background",
+    "title": "References & Resources",
+    "section": "Context & Background",
+    "text": "Context & Background\nAER State of the Energy Market 2025 — Chapter 6 (Retail) https://www.aer.gov.au/system/files/2025-08/State%20of%20the%20energy%20market%202025%20-%20Chapter%206%20-%20Retail%20energy%20markets%20and%20energy%20consumers.pdf Annual deep-dive into retail market. DMO/VDO trends, market concentration, pricing comparisons.\nAustralian Energy Statistics 2025 (DCCEEW) https://www.energy.gov.au/publications/australian-energy-update-2024 Official national energy stats — consumption, generation mix, renewables growth."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/references.html#kaggle-ready-to-go-datasets",
+    "href": "projects/260428_retail_energy/references.html#kaggle-ready-to-go-datasets",
+    "title": "References & Resources",
+    "section": "Kaggle — Ready-to-Go Datasets",
+    "text": "Kaggle — Ready-to-Go Datasets\nNSW Electricity Price & Demand 2018–2023 https://www.kaggle.com/datasets/joebeachcapital/nsw-australia-electricity-demand-2018-2023 Pre-cleaned AEMO data for NSW, 30-min intervals. Good for getting R pipeline running fast.\nVictoria Daily Electricity Price & Demand 2015–2020 https://www.kaggle.com/datasets/aramacus/electricity-demand-in-victoria-australia Clean Victoria data. Slightly older but simple and ready to go."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/scribbles.html",
+    "href": "projects/260428_retail_energy/scribbles.html",
+    "title": "Notes & Sketches",
+    "section": "",
+    "text": "Doodles and thinking-out-loud go here."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/04-visualization.html",
+    "href": "projects/260428_retail_energy/04-visualization.html",
+    "title": "Visualisation",
+    "section": "",
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/02-etl.html",
+    "href": "projects/260428_retail_energy/02-etl.html",
+    "title": "Data & ETL",
+    "section": "",
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/01-intro.html",
+    "href": "projects/260428_retail_energy/01-intro.html",
+    "title": "Why Retail Energy?",
+    "section": "",
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/03-analysis.html",
+    "href": "projects/260428_retail_energy/03-analysis.html",
+    "title": "Diving Into the Data",
+    "section": "",
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "projects/260428_retail_energy/index.html",
+    "href": "projects/260428_retail_energy/index.html",
+    "title": "Retail Energy Markets — Down the Rabbit Hole",
+    "section": "",
+    "text": "Project intro coming soon."
   }
 ]

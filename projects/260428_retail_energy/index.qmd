@@ -1,5 +1,17 @@
 ---
-title: "Retail Energy Markets — Down the Rabbit Hole"
+title: "Retail Energy Markets"
 ---
 
-*Project intro coming soon.*
+*Familiar waters. First dive.* 🐟
+
+[01 — Why Retail Energy?](01-intro.qmd)
+
+[02 — Data & ETL](02-etl.qmd)
+
+[03 — Analysis](03-analysis.qmd)
+
+[04 — Visualisation](04-visualisation.qmd)
+
+[References](references.qmd)
+
+[Notes & Scribbles](notes.qmd)

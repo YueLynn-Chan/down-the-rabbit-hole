@@ -4,4 +4,14 @@ title: "Projects"
 
 Welcome to the rabbit hole. Each project is a deep dive into something I found interesting — different data, different tools, same curiosity.
 
-*More projects coming soon.*
+---
+
+## 01 — Retail Energy Markets
+
+*Familiar waters. First dive.*
+
+Exploring customer behaviour, pricing pressure, and hardship metrics in the Australian retail energy market — through the lens of someone who works in it.
+
+**Tools:** R · Tableau · Quarto
+
+[Dive in →](projects/260428_retail_energy/index.qmd)

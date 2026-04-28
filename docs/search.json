@@ -4,7 +4,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Welcome to the rabbit hole. Each project is a deep dive into something I found interesting — different data, different tools, same curiosity.\nMore projects coming soon."
+    "text": "Welcome to the rabbit hole. Each project is a deep dive into something I found interesting — different data, different tools, same curiosity."
   },
   {
     "objectID": "about.html",
@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Down the Rabbit Hole",
     "section": "",
-    "text": "Hi, I’m YueLynn — a data analyst with a habit of diving too deep into things I find interesting.\nThis is my portfolio. Every few weeks I pick a topic, find the data, and see what it actually says. The topics are random. The analysis isn’t.\nTake a look around."
+    "text": "hey, i’m yuelynn, just a girl with the curiosity of a cat and the memory of a goldfish.\nwhich means i want to learn everything, dive as deep as possible into whatever catches my brain — and then forget all of it unless i do something with it. so this is that. a portfolio that’s also a paper trail of my own hyperfixations.\nevery few weeks, when the 3am wikipedia spiral hits, i pick a topic, find the data, do the research, and make something from it. the topics are completely random. the analysis isn’t.\nget ready. enjoy the dive. 🐟"
   },
   {
     "objectID": "about.html#hi-im-yuelynn-chan",
@@ -100,9 +100,9 @@
   {
     "objectID": "projects/260428_retail_energy/01-intro.html",
     "href": "projects/260428_retail_energy/01-intro.html",
-    "title": "Why Retail Energy?",
+    "title": "Why retail energy?",
     "section": "",
-    "text": "Coming soon."
+    "text": "honest answer — i work in it.\ni spend 9-5 in retail energy pricing, and apparently that’s not enough because here i am after hours, doing more energy stuff. a hyperfixation is a hyperfixation. first dive, and i’m already in the deep end — might as well see what’s down here.\nat work, everything is outputs. direct results, deadlines, decisions. there’s no space to actually dig, to follow a thread just because it’s interesting, to ask questions that aren’t immediately useful. this is that space.\nfamiliar waters means easier diving. i already know the landscape — DMO, VDO, wholesale price movements, hardship metrics — so i can spend less time decoding the context and more time doing actual analysis. the 2022 energy crisis is something i lived through professionally and never got to properly interrogate from the outside. time to fix that.\nalso price change season is coming up and i simply do not have the capacity to go deep on something completely foreign right now. so guess we’ll work with what we have! 🐟\nmore coming soon."
   },
   {
     "objectID": "projects/260428_retail_energy/03-analysis.html",
@@ -114,8 +114,15 @@
   {
     "objectID": "projects/260428_retail_energy/index.html",
     "href": "projects/260428_retail_energy/index.html",
-    "title": "Retail Energy Markets — Down the Rabbit Hole",
+    "title": "Retail Energy Markets",
     "section": "",
-    "text": "Project intro coming soon."
+    "text": "Familiar waters. First dive. 🐟\n01 — Why Retail Energy?\n02 — Data & ETL\n03 — Analysis\n04 — Visualisation\nReferences\nNotes & Scribbles"
+  },
+  {
+    "objectID": "projects.html#retail-energy-markets",
+    "href": "projects.html#retail-energy-markets",
+    "title": "Projects",
+    "section": "01 — Retail Energy Markets",
+    "text": "01 — Retail Energy Markets\nFamiliar waters. First dive.\nExploring customer behaviour, pricing pressure, and hardship metrics in the Australian retail energy market — through the lens of someone who works in it.\nTools: R · Tableau · Quarto\nDive in →"
   }
 ]
